@@ -75,4 +75,27 @@ function div(){
         document.getElementById("resultado").textContent =
         "A área da coroa circular é: " + resultado.toFixed(2);
     }
+
+    function areaelipse(){
+        const semiEixoMaior = parseFloat(document.getElementById("num1").value);
+        const semiEixoMenor = parseFloat(document.getElementById("num2").value);
     
+        const resultado = Math.PI * semiEixoMaior * semiEixoMenor;
+    
+        document.getElementById("resultado").textContent =
+        "A área da elipse é: " + resultado.toFixed(2);
+    }
+
+    function areaparalelogramo(){
+        const base = parseFloat(document.getElementById("num1").value);
+        const altura = parseFloat(document.getElementById("num2").value);
+        const resultado = base * altura;
+        document.getElementById("resultado").textContent = "A área do paralelogramo é: " + resultado;
+    }
+    
+    function areapoligonoregular(){
+        const apotema = parseFloat(document.getElementById("num1").value);
+        const perimetro = parseFloat(document.getElementById("num2").value);
+        const resultado = (apotema * perimetro) / 2;
+        document.getElementById("resultado").textContent = "A área do polígono regular é: " + resultado;
+    }
