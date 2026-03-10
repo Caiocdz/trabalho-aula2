@@ -1,32 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+<meta charset="UTF-8">
+<title>Calculadora</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Calculadora</h1>
-    <input type="number" id="num1">
-    <input type="number" id="num2">
-    <input type="number" id="num3">
-    <button id="soma" onclick="soma()">soma</button>
-    <button id="sub" onclick="menos()">Subtraçao</button>
-    <button id="div" onclick="div()">Divisao</button>
-    <button id="mult" onclick="mult()">Multiplicaçao</button>
-    <button id="triangulo" onclick="areatriangulo()">Area triangulo </button>
-    <button id="trapezio" onclick="areatrapezio()">Area trapezio </button>
-    <button id="losangulo" onclick="arealosango()">Area losangulo </button>
-    <button id="circulo" onclick="areacirculo()">Area circulo </button>
-    <button id="setor circular" onclick="areasetorcircular()">Area setor circular </button>
-    <button id="coroa circular" onclick="areacoroacircular()">Area coroa circular </button>
-    <button id="elipse" onclick="areaelipse()">Area elipse </button>
-    <button id="paralelogramo" onclick="areaparalelogramo()">Area paralelogramo </button>
-    <button id="poligonoregular" onclick="areapoligonoregular()">Area polígono regular </button>
 
-    <p id="resultado"></p> 
-    
+<h1>Calculadora</h1>
 
-    <script src="script.js"></script>
-</body> 
+<div class="container">
+
+<div class="card">
+<h3>Soma</h3>
+<input type="number" id="soma1" placeholder="Número 1">
+<input type="number" id="soma2" placeholder="Número 2">
+<button onclick="soma()">Somar</button>
+</div>
+
+<div class="card">
+<h3>Subtração</h3>
+<input type="number" id="sub1" placeholder="Número 1">
+<input type="number" id="sub2" placeholder="Número 2">
+<button onclick="menos()">Subtrair</button>
+</div>
+
+<div class="card">
+<h3>Multiplicação</h3>
+<input type="number" id="mult1" placeholder="Número 1">
+<input type="number" id="mult2" placeholder="Número 2">
+<button onclick="mult()">Multiplicar</button>
+</div>
+
+<div class="card">
+<h3>Divisão</h3>
+<input type="number" id="div1" placeholder="Número 1">
+<input type="number" id="div2" placeholder="Número 2">
+<button onclick="div()">Dividir</button>
+</div>
+
+<div class="card">
+<h3>Área do Triângulo</h3>
+<input type="number" id="triBase" placeholder="Base">
+<input type="number" id="triAltura" placeholder="Altura">
+<button onclick="areatriangulo()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Quadrado</h3>
+<input type="number" id="ladoQuadrado" placeholder="Lado">
+<button onclick="areaquadrado()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Retângulo</h3>
+<input type="number" id="retBase" placeholder="Base">
+<input type="number" id="retAltura" placeholder="Altura">
+<button onclick="arearetangulo()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Trapézio</h3>
+<input type="number" id="trapBase1" placeholder="Base maior">
+<input type="number" id="trapBase2" placeholder="Base menor">
+<input type="number" id="trapAltura" placeholder="Altura">
+<button onclick="areatrapezio()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Losango</h3>
+<input type="number" id="losDiag1" placeholder="Diagonal maior">
+<input type="number" id="losDiag2" placeholder="Diagonal menor">
+<button onclick="arealosango()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Círculo</h3>
+<input type="number" id="raioCirculo" placeholder="Raio">
+<button onclick="areacirculo()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Paralelogramo</h3>
+<input type="number" id="parBase" placeholder="Base">
+<input type="number" id="parAltura" placeholder="Altura">
+<button onclick="areaparalelogramo()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Setor Circular</h3>
+<input type="number" id="setRaio" placeholder="Raio">
+<input type="number" id="setAngulo" placeholder="Ângulo">
+<button onclick="areasetorcircular()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Coroa Circular</h3>
+<input type="number" id="coroaMaior" placeholder="Raio externo">
+<input type="number" id="coroaMenor" placeholder="Raio interno">
+<button onclick="areacoroacircular()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Elipse</h3>
+<input type="number" id="elipseMaior" placeholder="Raio maior">
+<input type="number" id="elipseMenor" placeholder="Raio menor">
+<button onclick="areaelipse()">Calcular</button>
+</div>
+
+<div class="card">
+<h3>Polígono Regular</h3>
+<input type="number" id="apotema" placeholder="Apótema">
+<input type="number" id="perimetro" placeholder="Perímetro">
+<button onclick="areapoligonoregular()">Calcular</button>
+</div>
+
+</div>
+
+<p id="resultado"></p>
+
+<script src="script.js"></script>
+
+</body>
 </html>
